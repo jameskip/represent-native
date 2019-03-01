@@ -1,0 +1,1027 @@
+{
+   "status":"OK",
+   "copyright":"Copyright (c) 2019 Pro Publica Inc. All Rights Reserved.",
+   "results": {
+      "chamber": "Both",
+      "offset": 0,
+      
+      
+      "num_results": 20,
+      "votes": [
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 32,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00032.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00032",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/32.json",
+           "bill": {},
+           "amendment": {
+           },
+           "nomination": {
+             "nomination_id": "PN22-116",
+             "number": "PN22",
+             "name": "Andrew Wheeler",
+             "agency": "Environmental Protection Agency"
+           },
+           "question": "On the Cloture Motion",
+           "question_text": "On the Cloture Motion PN22",
+           "description": "Andrew Wheeler, of Virginia, to be Administrator of the Environmental Protection Agency",
+           "vote_type": "1/2",
+           "date": "2019-02-27",
+           "time": "13:18:00",
+           "result": "Cloture Motion Agreed to",
+           "democratic": {
+             "yes": 0,
+             "no": 44,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": 52,
+             "no": 0,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 2,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 52,
+             "no": 46,
+             "present": 0,
+             "not_voting": 2}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 31,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00031.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00031",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/31.json",
+           "bill": {},
+           "amendment": {
+           },
+           "nomination": {
+             "nomination_id": "PN89-116",
+             "number": "PN89",
+             "name": "Michael J. Desmond",
+             "agency": "Department of the Treasury"
+           },
+           "question": "On the Nomination",
+           "question_text": "On the Nomination PN89",
+           "description": "Michael J. Desmond, of California, to be Chief Counsel for the Internal Revenue Service and an Assistant General Counsel in the Department of the Treasury",
+           "vote_type": "1/2",
+           "date": "2019-02-27",
+           "time": "12:33:00",
+           "result": "Nomination Confirmed",
+           "democratic": {
+             "yes": 30,
+             "no": 14,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 52,
+             "no": 0,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 1,
+             "no": 1,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 83,
+             "no": 15,
+             "present": 0,
+             "not_voting": 2}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 95,
+           "source": "http://clerk.house.gov/evs/2019/roll095.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll095.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/95.json",
+           "bill": {
+           "bill_id": "s47-116",
+           "number": "S.47",
+           "sponsor_id": "M001153",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/s47.json",
+           "title": "A bill to provide for the management of the natural resources of the United States, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Natural Resources Management Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2019-02-26",
+           "time": "18:41:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 230,
+             "no": 0,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 133,
+             "no": 62,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 363,
+             "no": 62,
+             "present": 0,
+             "not_voting": 6}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 94,
+           "source": "http://clerk.house.gov/evs/2019/roll094.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll094.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/94.json",
+           "bill": {
+           "bill_id": "hjres46-116",
+           "number": "H.J.RES.46",
+           "sponsor_id": "C001091",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hjres46.json",
+           "title": "Relating to a national emergency declared by the President on February 15, 2019.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "Relating to a national emergency declared by the President on February 15, 2019",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-26",
+           "time": "18:32:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 232,
+             "no": 0,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 13,
+             "no": 182,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 245,
+             "no": 182,
+             "present": 0,
+             "not_voting": 5}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 30,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00030.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00030",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/30.json",
+           "bill": {},
+           "amendment": {
+           },
+           "nomination": {
+             "nomination_id": "PN89-116",
+             "number": "PN89",
+             "name": "Michael J. Desmond",
+             "agency": "Department of the Treasury"
+           },
+           "question": "On the Cloture Motion",
+           "question_text": "On the Cloture Motion PN89",
+           "description": "Michael J. Desmond, of California, to be Chief Counsel for the Internal Revenue Service and an Assistant General Counsel in the Department of the Treasury",
+           "vote_type": "1/2",
+           "date": "2019-02-26",
+           "time": "17:33:00",
+           "result": "Cloture Motion Agreed to",
+           "democratic": {
+             "yes": 30,
+             "no": 14,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 53,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 1,
+             "no": 1,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 84,
+             "no": 15,
+             "present": 0,
+             "not_voting": 1}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 29,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00029.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00029",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/29.json",
+           "bill": {},
+           "amendment": {
+           },
+           "nomination": {
+             "nomination_id": "PN239-116",
+             "number": "PN239",
+             "name": "Eric D. Miller",
+             "agency": "The Judiciary"
+           },
+           "question": "On the Nomination",
+           "question_text": "On the Nomination PN239",
+           "description": "Eric D. Miller, of Washington, to be United States Circuit Judge for the Ninth Circuit",
+           "vote_type": "1/2",
+           "date": "2019-02-26",
+           "time": "16:54:00",
+           "result": "Nomination Confirmed",
+           "democratic": {
+             "yes": 0,
+             "no": 44,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": 53,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 2,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 53,
+             "no": 46,
+             "present": 0,
+             "not_voting": 1}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 93,
+           "source": "http://clerk.house.gov/evs/2019/roll093.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll093.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/93.json",
+           "bill": {
+           "bill_id": "hres144-116",
+           "number": "H.RES.144",
+           "sponsor_id": "T000474",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hres144.json",
+           "title": "Providing for consideration of the joint resolution (H.J. Res. 46) relating to a national emergency declared by the President on February 15, 2019.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the joint resolution (H.J. Res. 46) relating to a national emergency declared by the President on February 15, 2019",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-26",
+           "time": "15:30:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 229,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 193,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 229,
+             "no": 193,
+             "present": 0,
+             "not_voting": 9}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 92,
+           "source": "http://clerk.house.gov/evs/2019/roll092.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll092.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/92.json",
+           "bill": {
+           "bill_id": "hres144-116",
+           "number": "H.RES.144",
+           "sponsor_id": "T000474",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hres144.json",
+           "title": "Providing for consideration of the joint resolution (H.J. Res. 46) relating to a national emergency declared by the President on February 15, 2019.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Ordering the Previous Question",
+           "question_text": "",
+           "description": "Providing for consideration of the joint resolution (H.J. Res. 46) relating to a national emergency declared by the President on February 15, 2019",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-26",
+           "time": "15:20:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 228,
+             "no": 0,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 193,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 228,
+             "no": 193,
+             "present": 0,
+             "not_voting": 10}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 91,
+           "source": "http://clerk.house.gov/evs/2019/roll091.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll091.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/91.json",
+           "bill": {
+           "bill_id": "hres145-116",
+           "number": "H.RES.145",
+           "sponsor_id": "R000606",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hres145.json",
+           "title": "Providing for consideration of the bill (H.R. 8) to require a background check for every firearm sale, and providing for consideration of the bill (H.R. 1112) to amend chapter 44 of title 18, United States Code, to strengthen the background check procedures to be followed before a Federal firearms licensee may transfer a firearm to a person who is not such a licensee.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the bill (H.R. 8) Bipartisan Background Checks Act, and providing for consideration of the bill (H.R. 1112) Enhanced Background Checks Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-26",
+           "time": "15:10:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 227,
+             "no": 2,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 192,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 227,
+             "no": 194,
+             "present": 0,
+             "not_voting": 10}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 90,
+           "source": "http://clerk.house.gov/evs/2019/roll090.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll090.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/90.json",
+           "bill": {
+           "bill_id": "hres145-116",
+           "number": "H.RES.145",
+           "sponsor_id": "R000606",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hres145.json",
+           "title": "Providing for consideration of the bill (H.R. 8) to require a background check for every firearm sale, and providing for consideration of the bill (H.R. 1112) to amend chapter 44 of title 18, United States Code, to strengthen the background check procedures to be followed before a Federal firearms licensee may transfer a firearm to a person who is not such a licensee.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Ordering the Previous Question",
+           "question_text": "",
+           "description": "Providing for consideration of the bill (H.R. 8) Bipartisan Background Checks Act, and providing for consideration of the bill (H.R. 1112) Enhanced Background Checks Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-26",
+           "time": "14:58:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 229,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 191,
+             "present": 0,
+             "not_voting": 7,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 229,
+             "no": 191,
+             "present": 0,
+             "not_voting": 11}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 89,
+           "source": "http://clerk.house.gov/evs/2019/roll089.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll089.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/89.json",
+           "bill": {
+           "bill_id": "hr276-116",
+           "number": "H.R.276",
+           "sponsor_id": "T000468",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hr276.json",
+           "title": "To direct the Secretary of Education to establish the Recognizing Inspiring School Employees (RISE) Award Program recognizing excellence exhibited by classified school employees providing services to students in prekindergarten through high school.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+           },
+           "amendment": {
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Recognizing Achievement in Classified School Employees Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2019-02-25",
+           "time": "19:30:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 17,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 170,
+             "no": 19,
+             "present": 0,
+             "not_voting": 9,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 387,
+             "no": 19,
+             "present": 0,
+             "not_voting": 25}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 88,
+           "source": "http://clerk.house.gov/evs/2019/roll088.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll088.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/88.json",
+           "bill": {
+           "bill_id": "hr539-116",
+           "number": "H.R.539",
+           "sponsor_id": "L000563",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hr539.json",
+           "title": "To require the Director of the National Science Foundation to develop an I-Corps course to support commercialization-ready innovation companies, and for other purposes.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+           },
+           "amendment": {
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Innovators to Entrepreneurs Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2019-02-25",
+           "time": "19:00:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 214,
+             "no": 0,
+             "present": 0,
+             "not_voting": 20,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 171,
+             "no": 18,
+             "present": 0,
+             "not_voting": 9,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 385,
+             "no": 18,
+             "present": 0,
+             "not_voting": 28}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 28,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00028.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00028",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/28.json",
+           "bill": {},
+           "amendment": {
+           },
+           "nomination": {
+             "nomination_id": "PN239-116",
+             "number": "PN239",
+             "name": "Eric D. Miller",
+             "agency": "The Judiciary"
+           },
+           "question": "On the Cloture Motion",
+           "question_text": "On the Cloture Motion PN239",
+           "description": "Eric D. Miller, of Washington, to be United States Circuit Judge for the Ninth Circuit",
+           "vote_type": "1/2",
+           "date": "2019-02-25",
+           "time": "18:12:00",
+           "result": "Cloture Motion Agreed to",
+           "democratic": {
+             "yes": 0,
+             "no": 45,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": 51,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 1,
+             "present": 0,
+             "not_voting": 1
+            },
+           "total": {
+             "yes": 51,
+             "no": 46,
+             "present": 0,
+             "not_voting": 3}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 27,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00027.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00027",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/27.json",
+           "bill": {
+           "bill_id": "s311-116",
+           "number": "S.311",
+           "sponsor_id": "S001197",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/s311.json",
+           "title": "A bill to amend title 18, United States Code, to prohibit a health care practitioner from failing to exercise the proper degree of care in the case of a child who survives an abortion or attempted abortion.",
+           "latest_action": "Cloture on the motion to proceed not invoked in Senate by Yea-Nay Vote. 53 - 44. Record Vote Number: 27. (CR S1422)"
+           },
+           "amendment": {
+           },
+           "question": "On Cloture on the Motion to Proceed",
+           "question_text": "On Cloture on the Motion to Proceed S. 311",
+           "description": "A bill to amend title 18, United States Code, to prohibit a health care practitioner from failing to exercise the proper degree of care in the case of a child who survives an abortion or attempted abortion.",
+           "vote_type": "3/5",
+           "date": "2019-02-25",
+           "time": "17:42:00",
+           "result": "Cloture on the Motion to Proceed Rejected",
+           "democratic": {
+             "yes": 3,
+             "no": 42,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": 50,
+             "no": 0,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 2,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 53,
+             "no": 44,
+             "present": 0,
+             "not_voting": 3}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 87,
+           "source": "http://clerk.house.gov/evs/2019/roll087.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll087.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/87.json",
+           "bill": {
+           "bill_id": "hjres31-116",
+           "number": "H.J.RES.31",
+           "sponsor_id": "R000486",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hjres31.json",
+           "title": "Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes.",
+           "latest_action": "Became Public Law No: 116-6."
+           },
+           "amendment": {
+           },
+           "question": "On Agreeing to the Conference Report",
+           "question_text": "",
+           "description": "Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-14",
+           "time": "20:59:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 213,
+             "no": 19,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 87,
+             "no": 109,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 300,
+             "no": 128,
+             "present": 0,
+             "not_voting": 4}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 86,
+           "source": "http://clerk.house.gov/evs/2019/roll086.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll086.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/86.json",
+           "bill": {
+           "bill_id": "hres131-116",
+           "number": "H.RES.131",
+           "sponsor_id": "P000593",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hres131.json",
+           "title": "Providing for consideration of the conference report to accompany the joint resolution (H.J. Res. 31) making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes, and providing for proceedings during the period from February 15, 2019, through February 22, 2019.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the conference report to accompany H.J. Res. 31, making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes; providing for proceedings during the period from February 15, 2019 through February 22, 2019",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-14",
+           "time": "19:35:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 230,
+             "no": 0,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 196,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 230,
+             "no": 196,
+             "present": 0,
+             "not_voting": 5}
+          },
+        {
+           "congress": 116,
+           "chamber": "House",
+           "session": 1,
+           "roll_call": 85,
+           "source": "http://clerk.house.gov/evs/2019/roll085.xml",
+           "url": "http://clerk.house.gov/evs/2019/roll085.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/house/sessions/1/votes/85.json",
+           "bill": {
+           "bill_id": "hres131-116",
+           "number": "H.RES.131",
+           "sponsor_id": "P000593",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hres131.json",
+           "title": "Providing for consideration of the conference report to accompany the joint resolution (H.J. Res. 31) making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes, and providing for proceedings during the period from February 15, 2019, through February 22, 2019.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "amendment": {
+           },
+           "question": "On Ordering the Previous Question",
+           "question_text": "",
+           "description": "Providing for consideration of the conference report to accompany H.J. Res. 31, making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes; providing for proceedings during the period from February 15, 2019 through February 22, 2019",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2019-02-14",
+           "time": "19:26:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 229,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 195,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 229,
+             "no": 195,
+             "present": 0,
+             "not_voting": 7}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 26,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00026.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00026",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/26.json",
+           "bill": {
+           "bill_id": "hjres31-116",
+           "number": "H.J.RES.31",
+           "sponsor_id": "R000486",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hjres31.json",
+           "title": "Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes.",
+           "latest_action": "Became Public Law No: 116-6."
+           },
+           "amendment": {
+           },
+           "question": "On the Conference Report",
+           "question_text": "On the Conference Report H.J.Res. 31",
+           "description": "A joint resolution making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes.",
+           "vote_type": "1/2",
+           "date": "2019-02-14",
+           "time": "15:59:00",
+           "result": "Conference Report Agreed to",
+           "democratic": {
+             "yes": 40,
+             "no": 5,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 41,
+             "no": 11,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 2,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 83,
+             "no": 16,
+             "present": 0,
+             "not_voting": 1}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 25,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00025.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00025",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/25.json",
+           "bill": {
+           "bill_id": "hjres31-116",
+           "number": "H.J.RES.31",
+           "sponsor_id": "R000486",
+           "api_uri": "https://api.propublica.org/congress/v1/116/bills/hjres31.json",
+           "title": "Making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes.",
+           "latest_action": "Became Public Law No: 116-6."
+           },
+           "amendment": {
+           },
+           "question": "On the Cloture Motion",
+           "question_text": "On the Cloture Motion H.J.Res. 31",
+           "description": "A joint resolution making further continuing appropriations for the Department of Homeland Security for fiscal year 2019, and for other purposes.",
+           "vote_type": "3/5",
+           "date": "2019-02-14",
+           "time": "15:31:00",
+           "result": "Cloture Motion Agreed to",
+           "democratic": {
+             "yes": 40,
+             "no": 5,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 42,
+             "no": 10,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 2,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 84,
+             "no": 15,
+             "present": 0,
+             "not_voting": 1}
+          },
+        {
+           "congress": 116,
+           "chamber": "Senate",
+           "session": 1,
+           "roll_call": 24,
+           "source": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00024.xml",
+           "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=116&session=1&vote=00024",
+           "vote_uri": "https://api.propublica.org/congress/v1/116/senate/sessions/1/votes/24.json",
+           "bill": {},
+           "amendment": {
+           },
+           "nomination": {
+             "nomination_id": "PN17-116",
+             "number": "PN17",
+             "name": "William Pelham Barr",
+             "agency": "Department of Justice"
+           },
+           "question": "On the Nomination",
+           "question_text": "On the Nomination PN17",
+           "description": "William Pelham Barr, of Virginia, to be Attorney General",
+           "vote_type": "1/2",
+           "date": "2019-02-14",
+           "time": "12:32:00",
+           "result": "Nomination Confirmed",
+           "democratic": {
+             "yes": 3,
+             "no": 42,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": 51,
+             "no": 1,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 2,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 54,
+             "no": 45,
+             "present": 0,
+             "not_voting": 1}
+          }
+         ]
+    }
+}
