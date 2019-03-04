@@ -9,7 +9,9 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import Senators from './components/Senators.js'
+import SenateList from './components/SenateList.js'
+import HouseList from './components/HouseList.js'
+
 
 
 const instructions = Platform.select({
@@ -24,7 +26,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Senators/>
+        <SenateList/>
+        <HouseList/>
       </View>
     );
   }

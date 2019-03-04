@@ -4,18 +4,18 @@ import { Platform, StyleSheet, FlatList, Text, View } from "react-native";
 export default class Senators extends Component {
   constructor(props) {
     super(props);
-    this.state = { response: "" };
+    this.state = { house: "" };
   }
 
   componentDidMount() {
     return fetch(
-      "https://api.propublica.org/congress/v1/80-115/senate/members.json",
+      "https://api.propublica.org/congress/v1/102-115/house/members.json",
       { headers: { "X-API-Key": "JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx" } }
     )
-      .then(response => response.json())
-      .then(responseJson => {
-        console.log(responseJson.results[0].members);
-        this.setState({ response: responseJson.results[0].members });
+      .then(house => house.json())
+      .then(houseJson => {
+        console.log(houseJson.results[0].members);
+        this.setState({ house: houseJson.results[0].members });
       })
       .catch(error => {
         console.error(error);
@@ -23,8 +23,8 @@ export default class Senators extends Component {
   }
 
   render() {
-    console.log("from render ", this.state.response[0]);
-    let something = this.state.response[0]
+    console.log("from render ", this.state.house[0]);
+    let something = this.state.house
     if (!something) {
       return (
         <View>
@@ -34,10 +34,10 @@ export default class Senators extends Component {
     } else {
       return (
         <View>
-          {/* <Text>{JSON.stringify(this.state.response)}</Text> */}
           <FlatList
-            data={[{ key: something.first_name }, { key: "b" }]}
-            renderItem={({ item }) => <Text>{item.key}</Text>}
+            keyExtractor={item => item.id}
+            data={something}
+            renderItem={({ item }) => <Text>{`${item.first_name} ${item.last_name}`}</Text>}
           />
         </View>
       );
