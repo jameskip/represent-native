@@ -42,7 +42,7 @@ export default class Senators extends Component {
             data={something}
             renderItem={({ item }) =>
               <Text style={styles.item}>
-                {`${item.first_name} ${item.last_name}`}
+                {`${item.first_name} ${item.last_name} ${item.party}`}
               </Text>
             }
           />
@@ -58,8 +58,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: 20,
-    marginBottom: 200
+    padding: 20
   },
   header: {
     fontSize: 30,
