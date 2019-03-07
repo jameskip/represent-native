@@ -1,29 +1,29 @@
-import React, { Component } from "react";
-import { Platform, StyleSheet, FlatList, Text, View } from "react-native";
+import React, { Component } from 'react'
+import { Platform, StyleSheet, FlatList, Text, View } from 'react-native'
 
 export default class Senators extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { house: "" };
+  constructor (props) {
+    super(props)
+    this.state = { house: '' }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     return fetch(
-      "https://api.propublica.org/congress/v1/102-115/house/members.json",
-      { headers: { "X-API-Key": "JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx" } }
+      'https://api.propublica.org/congress/v1/102-115/house/members.json',
+      { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
     )
       .then(house => house.json())
       .then(houseJson => {
-        console.log(houseJson.results[0].members);
-        this.setState({ house: houseJson.results[0].members });
+        console.log(houseJson.results[0].members)
+        this.setState({ house: houseJson.results[0].members })
       })
       .catch(error => {
-        console.error(error);
-      });
+        console.error(error)
+      })
   }
 
-  render() {
-    console.log("from render ", this.state.house[0]);
+  render () {
+    console.log('From house render:  ', this.state.house[0])
     let something = this.state.house
     if (!something) {
       return (
@@ -33,15 +33,41 @@ export default class Senators extends Component {
       )
     } else {
       return (
-        <View>
+
+        <View style={styles.container}>
+          <Text style={styles.header}>Congress</Text>
+
           <FlatList
             keyExtractor={item => item.id}
             data={something}
-            renderItem={({ item }) => <Text>{`${item.first_name} ${item.last_name}`}</Text>}
+            renderItem={({ item }) =>
+              <Text style={styles.item}>
+                {`${item.first_name} ${item.last_name}`}
+              </Text>
+            }
           />
-        </View>
-      );
 
+        </View>
+
+      )
     }
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 20,
+    marginBottom: 200
+  },
+  header: {
+    fontSize: 30,
+    fontWeight: 'bold'
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44
+  }
+})
