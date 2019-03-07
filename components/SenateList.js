@@ -38,7 +38,7 @@ export default class Senators extends Component {
           <Text style={styles.header}>Senate</Text>
 
           <FlatList
-            keyExtractor={item => item.api_uri}
+            keyExtractor={item => item.id}
             data={something}
             renderItem={({ item }) =>
               <Text style={styles.item}>
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    padding: 10
   },
   item: {
     padding: 10,

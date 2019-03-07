@@ -1,4 +1,4 @@
-import RepContainer from './RepContainer.js'
+import RepContainer from './components/RepContainer.js'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
 
 const MainNavigator = createStackNavigator({

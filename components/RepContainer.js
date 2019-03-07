@@ -9,12 +9,16 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, ScrollView, Text, View} from 'react-native';
-import SenateList from './components/SenateList.js'
-import HouseList from './components/HouseList.js'
+import SenateList from './SenateList.js'
+import HouseList from './HouseList.js'
 
 type Props = {};
 export default class RepContainer extends Component<Props> {
+  static navigationOptions = {
+    title: 'Represent.',
+  }
   render() {
+    const {navigate} = this.props.navigation;
     return (
       <ScrollView style={styles.container}>
         <SenateList style={styles.senate}/>
