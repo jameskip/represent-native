@@ -14,7 +14,6 @@ export default class Senators extends Component {
     )
       .then(senate => senate.json())
       .then(senateJson => {
-        console.log(senateJson.results[0].members)
         this.setState({ senate: senateJson.results[0].members })
       })
       .catch(error => {
@@ -23,7 +22,6 @@ export default class Senators extends Component {
   }
 
   render () {
-    console.log('From senate render: ', this.state.senate[0])
     let something = this.state.senate
     if (!something) {
       return (
@@ -41,7 +39,7 @@ export default class Senators extends Component {
             keyExtractor={item => item.id}
             data={something}
             renderItem={({ item }) =>
-              <Text style={styles.item}>
+              <Text style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
                 {`${item.first_name} ${item.last_name} ${item.party}`}
               </Text>
             }

@@ -7,25 +7,26 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, {Component} from 'react';
-import {StyleSheet, ScrollView, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, ScrollView } from 'react-native';
 import SenateList from './SenateList.js'
 import HouseList from './HouseList.js'
 
-type Props = {};
-export default class RepContainer extends Component<Props> {
+export default class RepContainer extends Component {
   static navigationOptions = {
     title: 'Represent.',
   }
+
   render() {
-    const {navigate} = this.props.navigation;
+
     return (
       <ScrollView style={styles.container}>
-        <SenateList style={styles.senate}/>
-        <HouseList style={styles.house}/>
+        <SenateList navigation={this.props.navigation} style={styles.senate}/>
+        <HouseList navigation={this.props.navigation} style={styles.house}/>
       </ScrollView>
     );
   }
+
 }
 
 const styles = StyleSheet.create({

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Platform, StyleSheet, FlatList, Text, View } from 'react-native'
+import { StyleSheet, FlatList, Text, View } from 'react-native'
 
 export default class Senators extends Component {
   constructor (props) {
@@ -14,7 +14,6 @@ export default class Senators extends Component {
     )
       .then(house => house.json())
       .then(houseJson => {
-        console.log(houseJson.results[0].members)
         this.setState({ house: houseJson.results[0].members })
       })
       .catch(error => {
@@ -23,7 +22,6 @@ export default class Senators extends Component {
   }
 
   render () {
-    console.log('From house render:  ', this.state.house[0])
     let something = this.state.house
     if (!something) {
       return (
