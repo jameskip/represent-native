@@ -27,7 +27,7 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     alignContent: 'center',
-    backgroundColor: 'rgb(184, 228, 184)',
+    backgroundColor: 'white',
     paddingTop: 100
   },
   senate: {
@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
   },
   house: {
     textAlign: 'center',
-    color: '#333333',
     marginBottom: 5,
   },
 });

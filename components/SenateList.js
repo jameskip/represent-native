@@ -38,11 +38,11 @@ export default class Senators extends Component {
           <Text style={styles.header}>Senate</Text>
 
           <FlatList
-            keyExtractor={item => item.id}
+            keyExtractor={item => item.api_uri}
             data={something}
             renderItem={({ item }) =>
               <Text style={styles.item}>
-                {`${item.first_name} ${item.last_name}`}
+                {`${item.first_name} ${item.last_name} ${item.party}`}
               </Text>
             }
           />
