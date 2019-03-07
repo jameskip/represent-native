@@ -39,7 +39,7 @@ export default class Senators extends Component {
             keyExtractor={item => item.id}
             data={something}
             renderItem={({ item }) =>
-              <Text style={styles.item}>
+              <Text style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
                 {`${item.first_name} ${item.last_name} ${item.party}`}
               </Text>
             }
