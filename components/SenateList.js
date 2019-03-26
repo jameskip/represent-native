@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Platform, StyleSheet, FlatList, Text, View } from 'react-native'
+import { StyleSheet, FlatList, Text, View } from 'react-native'
 
 export default class Senators extends Component {
   constructor (props) {
@@ -9,7 +9,7 @@ export default class Senators extends Component {
 
   componentDidMount () {
     return fetch(
-      'https://api.propublica.org/congress/v1/80-115/senate/members.json',
+      'https://api.propublica.org/congress/v1/115/senate/members.json',
       { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
     )
       .then(senate => senate.json())

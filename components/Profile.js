@@ -2,11 +2,32 @@ import React, { Component } from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
 export default class Profile extends Component {
+  constructor (props) {
+    super(props)
+    this.state = { member: '' }
+    this.profileInfo = this.props.navigation.state.params.item
+  }
+
+  componentWillMount () {
+    return fetch(
+      `https://api.propublica.org/congress/v1/members/${this.profileInfo.id}.json`,
+      { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
+    )
+      .then(member => member.json())
+      .then(memberJson => {
+        this.setState({ member: memberJson })
+      })
+      .catch(error => {
+        console.error(error)
+      })
+  }
+
   render () {
-    const profileInfo = this.props.navigation.state.params.item
+    console.log('this.profileInfo', this.profileInfo)
+    console.log('this.state.member =====> ', this.state.member)
     return (
       <View>
-        <Text style={styles.header}>{profileInfo.first_name} {profileInfo.last_name}</Text>
+        <Text style={styles.header}>{this.profileInfo.first_name} {this.profileInfo.last_name}</Text>
       </View>
     )
   }
