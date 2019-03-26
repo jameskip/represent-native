@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, Linking } from 'react-native'
 
 export default class Profile extends Component {
   constructor (props) {
@@ -29,6 +29,7 @@ export default class Profile extends Component {
       <View>
         <Text style={styles.header}>{this.profileInfo.first_name} {this.profileInfo.last_name}</Text>
         <Text style={styles.subheader}>{this.profileInfo.title}</Text>
+        <Text onPress={() => { Linking.openURL(`https://twitter.com/${this.profileInfo.twitter_account}`) }}>twitter</Text>
       </View>
     )
   }

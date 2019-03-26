@@ -25,8 +25,8 @@ export default class Senators extends Component {
     let isRefreshing = true
     let something = this.state.house
 
-    if (!something) {
-      isRefreshing = true
+    if (something) {
+      isRefreshing = false
     }
 
     return (
