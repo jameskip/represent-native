@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, FlatList, Text, View } from 'react-native'
+import { StyleSheet, TouchableOpacity, FlatList, Text, View } from 'react-native'
 
 export default class Senators extends Component {
   constructor (props) {
@@ -22,33 +22,38 @@ export default class Senators extends Component {
   }
 
   render () {
+    let isRefreshing = true
     let something = this.state.senate
+
     if (!something) {
-      return (
-        <View>
-          <Text>Loading...</Text>
-        </View>
-      )
-    } else {
-      return (
-
-        <View style={styles.container}>
-          <Text style={styles.header}>Senate</Text>
-
-          <FlatList
-            keyExtractor={item => item.id}
-            data={something}
-            renderItem={({ item }) =>
-              <Text style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
-                {`${item.first_name} ${item.last_name} ${item.party}`}
-              </Text>
-            }
-          />
-
-        </View>
-
-      )
+      isRefreshing = true
     }
+
+    return (
+
+      <View style={styles.container}>
+        <Text style={styles.header}>Senate</Text>
+
+        <FlatList
+          keyExtractor={item => item.id}
+          data={something}
+          refreshing={isRefreshing}
+          renderItem={({ item }) =>
+            <TouchableOpacity style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
+
+              <Text style={styles.name}>
+                {`${item.first_name} ${item.last_name}`}
+
+                <Text style={styles.party}>{`    ${item.party}`}</Text>
+              </Text>
+              <Text style={styles.subtext}>{`${item.title}`}</Text>
+            </TouchableOpacity>
+          }
+        />
+
+      </View>
+
+    )
   }
 }
 
@@ -56,16 +61,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: 20
+    paddingLeft: 20
+  },
+  item: {
+    paddingLeft: 10,
+    height: 44
   },
   header: {
     fontSize: 30,
     fontWeight: 'bold',
-    padding: 10
+    paddingLeft: 10,
+    paddingBottom: 10
   },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44
+  name: {
+    fontSize: 18
+  },
+  subtext: {
+    fontSize: 14,
+    color: 'gray'
+  },
+  party: {
+    fontSize: 10,
+    color: 'gray'
   }
 })

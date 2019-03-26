@@ -8,19 +8,19 @@ export default class Profile extends Component {
     this.profileInfo = this.props.navigation.state.params.item
   }
 
-  componentWillMount () {
-    return fetch(
-      `https://api.propublica.org/congress/v1/members/${this.profileInfo.id}.json`,
-      { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
-    )
-      .then(member => member.json())
-      .then(memberJson => {
-        this.setState({ member: memberJson })
-      })
-      .catch(error => {
-        console.error(error)
-      })
-  }
+  // componentWillMount () {
+  //   return fetch(
+  //     `https://api.propublica.org/congress/v1/members/${this.profileInfo.id}.json`,
+  //     { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
+  //   )
+  //     .then(member => member.json())
+  //     .then(memberJson => {
+  //       this.setState({ member: memberJson })
+  //     })
+  //     .catch(error => {
+  //       console.error(error)
+  //     })
+  // }
 
   render () {
     console.log('this.profileInfo', this.profileInfo)
@@ -28,6 +28,7 @@ export default class Profile extends Component {
     return (
       <View>
         <Text style={styles.header}>{this.profileInfo.first_name} {this.profileInfo.last_name}</Text>
+        <Text style={styles.subheader}>{this.profileInfo.title}</Text>
       </View>
     )
   }
@@ -40,9 +41,14 @@ const styles = StyleSheet.create({
     padding: 20
   },
   header: {
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: 'bold',
-    padding: 10
+    paddingLeft: 10
+  },
+  subheader: {
+    fontSize: 14,
+    paddingLeft: 10,
+    color: 'gray'
   },
   item: {
     padding: 10,
