@@ -11,7 +11,7 @@ export default class Profile extends Component {
   render () {
     console.log('this.profileInfo', this.profileInfo)
     return (
-      <View>
+      <View style={styles.container}>
 
         <Text style={styles.header}>{this.profileInfo.first_name} {this.profileInfo.last_name}</Text>
         <Text style={styles.subheader}>{this.profileInfo.title}</Text>
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: 20
+    padding: 20,
+    position: 'absolute'
   },
   header: {
     fontSize: 20,
