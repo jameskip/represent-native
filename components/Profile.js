@@ -8,28 +8,21 @@ export default class Profile extends Component {
     this.profileInfo = this.props.navigation.state.params.item
   }
 
-  // componentWillMount () {
-  //   return fetch(
-  //     `https://api.propublica.org/congress/v1/members/${this.profileInfo.id}.json`,
-  //     { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
-  //   )
-  //     .then(member => member.json())
-  //     .then(memberJson => {
-  //       this.setState({ member: memberJson })
-  //     })
-  //     .catch(error => {
-  //       console.error(error)
-  //     })
-  // }
-
   render () {
     console.log('this.profileInfo', this.profileInfo)
-    console.log('this.state.member =====> ', this.state.member)
     return (
       <View>
+
         <Text style={styles.header}>{this.profileInfo.first_name} {this.profileInfo.last_name}</Text>
         <Text style={styles.subheader}>{this.profileInfo.title}</Text>
-        <Text onPress={() => { Linking.openURL(`https://twitter.com/${this.profileInfo.twitter_account}`) }}>twitter</Text>
+
+        <Text style={styles.social}> // TODO: Create function to hide link if it is null
+          <Text onPress={() => { Linking.openURL(`https://twitter.com/${this.profileInfo.twitter_account}`) }}>twitter  </Text>
+          <Text onPress={() => { Linking.openURL(`https://facebook.com/${this.profileInfo.facebook_account}`) }}>facebook  </Text>
+          <Text onPress={() => { Linking.openURL(`https://youtube.com/${this.profileInfo.youtube_account}`) }}>youtube  </Text>
+          <Text onPress={() => { Linking.openURL(`${this.profileInfo.url}`) }}>website</Text>
+        </Text>
+
       </View>
     )
   }
@@ -51,9 +44,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     color: 'gray'
   },
-  item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44
+  social: {
+    paddingLeft: 10
   }
 })

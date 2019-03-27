@@ -30,29 +30,24 @@ export default class Senators extends Component {
     }
 
     return (
-
       <View style={styles.container}>
         <Text style={styles.header}>Senate</Text>
 
-        <FlatList
-          keyExtractor={item => item.id}
-          data={something}
-          refreshing={isRefreshing}
+        <FlatList keyExtractor={item => item.id} data={something} refreshing={isRefreshing}
           renderItem={({ item }) =>
             <TouchableOpacity style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
 
               <Text style={styles.name}>
                 {`${item.first_name} ${item.last_name}`}
-
                 <Text style={styles.party}>{`    ${item.party}`}</Text>
               </Text>
+
               <Text style={styles.subtext}>{`${item.title}`}</Text>
             </TouchableOpacity>
           }
         />
 
       </View>
-
     )
   }
 }
@@ -65,13 +60,13 @@ const styles = StyleSheet.create({
   },
   item: {
     paddingLeft: 10,
-    height: 44
+    paddingBottom: 30,
+    height: 50
   },
   header: {
     fontSize: 30,
     fontWeight: 'bold',
-    paddingLeft: 10,
-    paddingBottom: 10
+    paddingLeft: 10
   },
   name: {
     fontSize: 18
