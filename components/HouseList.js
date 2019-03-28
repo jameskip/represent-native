@@ -9,7 +9,7 @@ export default class Representatives extends Component {
 
   componentDidMount () {
     return fetch(
-      'https://api.propublica.org/congress/v1/115/house/members.json',
+      'https://api.propublica.org/congress/v1/116/house/members.json',
       { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
     )
       .then(house => house.json())

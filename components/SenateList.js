@@ -9,7 +9,7 @@ export default class Senators extends Component {
 
   componentDidMount () {
     return fetch(
-      'https://api.propublica.org/congress/v1/115/senate/members.json',
+      'https://api.propublica.org/congress/v1/116/senate/members.json',
       { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
     )
       .then(senate => senate.json())
