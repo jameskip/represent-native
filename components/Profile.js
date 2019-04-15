@@ -20,7 +20,8 @@ export default class Profile extends Component {
           <Text onPress={() => { Linking.openURL(`https://twitter.com/${this.profileInfo.twitter_account}`) }}>twitter  </Text>
           <Text onPress={() => { Linking.openURL(`https://facebook.com/${this.profileInfo.facebook_account}`) }}>facebook  </Text>
           <Text onPress={() => { Linking.openURL(`https://youtube.com/${this.profileInfo.youtube_account}`) }}>youtube  </Text>
-          <Text onPress={() => { Linking.openURL(`${this.profileInfo.url}`) }}>website</Text>
+          <Text onPress={() => { Linking.openURL(`${this.profileInfo.url}`) }}>website  </Text>
+          <Text onPress={() => { Linking.openURL(`tel:${this.profileInfo.phone}`) }}>phone  </Text>
         </Text>
 
       </View>
