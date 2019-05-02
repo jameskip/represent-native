@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Text, Linking } from 'react-native'
+import { StyleSheet, View, Text, Linking, ScrollView } from 'react-native'
+import Record from './Record.js'
 
 export default class Profile extends Component {
   constructor (props) {
@@ -12,10 +13,9 @@ export default class Profile extends Component {
     console.log('this.profileInfo', this.profileInfo)
     return (
       <View style={styles.container}>
-
         <Text style={styles.header}>{this.profileInfo.first_name} {this.profileInfo.last_name}</Text>
         <Text style={styles.subheader}>{this.profileInfo.title}</Text>
-        {/* // TODO: Create function to hide link if it is null */}
+        {/* TODO: Create function to hide link if it is null */}
         <Text style={styles.social}>
           <Text onPress={() => { Linking.openURL(`https://twitter.com/${this.profileInfo.twitter_account}`) }}>twitter  </Text>
           <Text onPress={() => { Linking.openURL(`https://facebook.com/${this.profileInfo.facebook_account}`) }}>facebook  </Text>
@@ -23,6 +23,8 @@ export default class Profile extends Component {
           <Text onPress={() => { Linking.openURL(`${this.profileInfo.url}`) }}>website  </Text>
           <Text onPress={() => { Linking.openURL(`tel:${this.profileInfo.phone}`) }}>phone  </Text>
         </Text>
+
+        <Record id={this.profileInfo.id} />
 
       </View>
     )
@@ -32,9 +34,7 @@ export default class Profile extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-    position: 'absolute'
+    justifyContent: 'center'
   },
   header: {
     fontSize: 20,

@@ -32,7 +32,6 @@ export default class Representatives extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.header}>House</Text>
-
         <FlatList keyExtractor={item => item.id} data={something} refreshing={isRefreshing}
           renderItem={({ item }) =>
             <TouchableOpacity style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
