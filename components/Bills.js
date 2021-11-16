@@ -1,22 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
 
 const Bills = () => {
-
-    const [bills, setBills] = useState([]);
-    
-
-    return (
-        <View style={styles.container}>
-            <Text>Bills</Text>
-        </View>
-
-    );
-};
+  const [bills, setBills] = useState([])
+  
+  return (
+    <View style={styles.container}>
+      <Text>Bills</Text>
+    </View>
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -25,4 +22,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
   }
-});
+})
