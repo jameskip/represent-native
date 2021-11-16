@@ -1,56 +1,44 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import { StyleSheet, TouchableOpacity, FlatList, Text, View } from 'react-native'
 
-export default class Representatives extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { house: '' }
-  }
 
-  componentWillMount () {
-    return fetch(
+const House = (props) => {
+  const [house, setHouse] = useState('')
+
+  const getHouse = async () => {
+    let response = await fetch(
       'https://api.propublica.org/congress/v1/117/house/members.json',
-      { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx' } }
+      { headers: { 'X-API-Key': 'JSp1AQhdSIuQQssE07bf5bsDT7HTpPDVQLAda1nx'} }
     )
-      .then(house => house.json())
-      .then(houseJson => {
-        this.setState({ house: houseJson.results[0].members })
-      })
-      .catch(error => {
-        console.error(error)
-      })
+    response = await response.json()
+    setHouse(response.results[0].members)
   }
 
-  render () {
-    let isRefreshing = true
-    let something = this.state.house
+  useEffect(() => getHouse(), [])
 
-    if (something) {
-      isRefreshing = false
-    }
+  let isRefreshing = house.length > 1 ? false : true
 
-    return (
-      <View style={styles.container}>
-        <Text style={styles.header}>House</Text>
+  return (
+    <View style={styles.container}>
+      <Text style={styles.header}>House</Text>
+      <FlatList keyExtractor={item => item.id} data={house} refreshing={isRefreshing}
+        renderItem={({ item }) =>
+        
+          <TouchableOpacity style={styles.item} onPress={() => props.navigation.navigate('Profile', { item: item })}>
+            <Text style={styles.name}>
+              {`${item.first_name} ${item.last_name}`}
+              <Text style={styles.party}>{`    ${item.party}`}</Text>
+            </Text>
+            <Text style={styles.subtext}>{`${item.title}`}</Text>
+          </TouchableOpacity>
 
-        <FlatList keyExtractor={item => item.id} data={something} refreshing={isRefreshing}
-          renderItem={({ item }) =>
-            <TouchableOpacity style={styles.item} onPress={() => this.props.navigation.navigate('Profile', { item: item })}>
-
-              <Text style={styles.name}>
-                {`${item.first_name} ${item.last_name}`}
-                <Text style={styles.party}>{`    ${item.party}`}</Text>
-              </Text>
-
-              <Text style={styles.subtext}>{`${item.title}`}</Text>
-            </TouchableOpacity>
-          }
-        />
-
-      </View>
-    )
-  }
+        }
+      />
+    </View>
+  )
 }
+
+export default House
 
 const styles = StyleSheet.create({
   container: {

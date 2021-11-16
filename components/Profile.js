@@ -9,7 +9,6 @@ export default class Profile extends Component {
   }
 
   render () {
-    console.log('this.profileInfo', this.profileInfo)
     return (
       <View style={styles.container}>
 
