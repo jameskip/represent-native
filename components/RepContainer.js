@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, StyleSheet, View } from 'react-native'
+import { StyleSheet, ScrollView } from 'react-native'
 import SenateList from './SenateList.js'
 import HouseList from './HouseList.js'
 
