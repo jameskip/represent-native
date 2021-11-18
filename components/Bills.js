@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native'
+import React, { useState } from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
 const Bills = () => {
   const [bills, setBills] = useState([])
-  
+
   return (
     <View style={styles.container}>
       <Text>Bills</Text>
@@ -20,6 +16,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  }
+    backgroundColor: '#F5FCFF',
+  },
 })
