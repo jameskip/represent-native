@@ -1,0 +1,8 @@
+{
+  "extends": ["prettier"],
+  "plugins": ["react-native", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+  "parser": "babel-eslint"
+}
